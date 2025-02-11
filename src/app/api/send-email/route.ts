@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: `"Cita de San Valentín" <${process.env.SMTP_USER}>`,
-      to: "tomh.tc89@gmail.com", // Reemplaza con el destinatario real
+      to: "victoria06paz@outlook.com, tomh.tc89@gmail.com, ", // Reemplaza con el destinatario real
       subject: "Confirmación de Cita de San Valentín",
       text: `Detalles de la cita:
 Fecha: ${fecha}

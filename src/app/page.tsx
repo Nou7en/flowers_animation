@@ -23,9 +23,6 @@ export default function FlowersPage() {
   }, []);
 
   // Al hacer clic en cualquier parte del sobre, redirige a "/formulario"
-  const handleClick = () => {
-    router.push('/formulario');
-  };
 
   return (
     <>

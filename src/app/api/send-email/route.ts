@@ -8,7 +8,7 @@ export async function POST(request: Request) {
       await request.json();
 
     // Configuración del transporte SMTP usando variables de entorno
-    let transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT),
       secure: process.env.SMTP_SECURE === "true", // true si usas puerto 465, false para otros

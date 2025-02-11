@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/navigation';
 
 export default function Formulario() {
   const [formData, setFormData] = useState({
@@ -13,7 +12,6 @@ export default function Formulario() {
     flores: '',
   });
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
